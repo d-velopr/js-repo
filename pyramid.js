@@ -1,4 +1,4 @@
-const hash = "#"
+const hash = "#";
 const howManyRows = "8";
 const pRows = [];
 
@@ -32,6 +32,7 @@ for (let i = 1; i <= howManyRows; i ++){
 let steps = ""
 
 for (const pRow of pRows){
+  // \n = next line in terminal after every iteration . otherwise it would look like this ### ## #
     steps = steps + "\n" + pRow;
 }
 console.log(steps);
