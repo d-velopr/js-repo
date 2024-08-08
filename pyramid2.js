@@ -8,6 +8,7 @@ const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
+  // returns the value of the hash variable, repeated rowNumber times
   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
@@ -22,6 +23,7 @@ while (rows.length < count) {
   let result = ""
 
   for (const row of rows) {
+    // \n = next line in terminal after every iteration . otherwise it would look like this ### ## #
     result = result + "\n" + row;
   }
   
